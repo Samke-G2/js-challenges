@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    font-family: Courier;
+    text-align: center;
+}
+form {
+    background-color: grey;
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+    text-align: center;
+    margin: 150px;
+    margin-bottom: 0;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+}
+form fieldset {
+    border-radius: 50px;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

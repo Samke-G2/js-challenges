@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount eligibility</title>
+    <link rel="stylesheet" href="./istyle.css">
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+            <legend>Discount eligibility</legend>
+
+            <input type="text" id="userName" name="name" placeholder="Name" autocomplete="name">      <br>
+            <br>
+            <input type="number" id="userAge" name="age" placeholder="Age" autocomplete="age">        <br>
+            <br><br>
+            <p>Are you a melsoft member?</p>
+            <input type="checkbox" id="checkBox" name="membership">   Yes
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="btn" id="checkBtn" onclick="eligibilityCheck()">Check</button>
+        </fieldset>
+    </form>
+    <br>
+    <p id="result"></p>
+    <script src="./script.js"></script>
+</body>
+</html>

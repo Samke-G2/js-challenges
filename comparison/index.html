@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coercion and Comparison</title>
+</head>
+<body>
+    <h1>Type Coercion and Comparison</h1>
+
+    <p>Please enter two numbers to compare</p>
+
+    <button onclick=" firstPrompt(); console.log('Num 1 entered')";>Number 1</button>   <br>
+    <br>
+    <button onclick=" secondPrompt(); console.log('Num 2 entered')";>Number 2</button>
+    <br>
+    <br>
+    <br>
+    <ol>
+        <li>
+            Are they equal? <br>
+            <button onclick=" alertDisplay(same(num1, num2))" ;>Find out </button>
+        </li>
+        <br>
+        <li>
+            Are they different? <br>
+            <button onclick=" alertDisplay(diff(num1, num2))" ;>Find out</button>
+        </li>
+        <br>
+        <li>
+            Is the first number bigger than, or equal to, the second? <br>
+            <button onclick=" alertDisplay(greater(num1, num2))" ;>Find out</button>
+        </li>
+        <br>
+        <li>
+            Is the first number smaller than, or equal to, the second? <br>
+            <button onclick=" alertDisplay(lesser(num1, num2))" ;>Find out</button>
+        </li>
+    </ol>
+    
+    <script src="script.js"></script>
+</body>
+</html>
