@@ -1,17 +1,18 @@
 console.log("Prime number counter")
 
 // defining the range within which you want to find prime numbers
-const startRange = 2;
-const endRange = 50;
+const startRange = 0 ;
+const endRange = 30 ;
 
+function primeCount (a, b) {
 // Create a for loop that iterates through the numbers within the range. 
 // Use the i variable as the loop counter
-for (let i = startRnage; i <= endRange; i++) {
+for (let i = a; i <= b; i++) {
     // code to check if i is a primer number
 
     // Inside the for loop, create a variable called isPrime and set it to true. 
     // This variable will be used to determine if the current number is a prime number.
-    let isPrime = true; 
+    let isPrime = true ; 
 
     // Create a nested for loop that iterates through the numbers from 2 to the square root of the current number i. 
     // Use the j variable as the loop counter
@@ -32,6 +33,10 @@ for (let i = startRnage; i <= endRange; i++) {
         }
     }
 }
+
+}
+console.log(primeCount(startRange, endRange)) ;
+console.log("end of programme") ;
 
 
 /* 
