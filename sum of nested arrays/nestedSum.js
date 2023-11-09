@@ -13,11 +13,11 @@ function addition(array) {
 
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < nestedArray[i].length; j++) {
-            sum += array[j] ;
+            sum += array[i][j] ;
         }
     }
 
     return sum ;
 }
 
-console.log(sum) ;
+console.log(addition(nestedArray)) ;
