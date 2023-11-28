@@ -45,8 +45,25 @@ addButton.addEventListener("click", addTask) ;
 // 4. Implement the delete functionality using delegation:
 let taskList = document.getElementById("taskList") ;
 taskList.addEventListener("click", function(event) {
-    if (event.target.tagName === "BUTTON" && event.target.textContet === "Delete") {
+    if (event.target.tagName === "BUTTON" && event.target.textContent === "Delete") {
         let listItem = event.target.parentElement;
         taskList.removeChild(listItem) ;
     }
 }) ;
+/*
+This code adds a ‘click’ event listener to the “taskList” ul element and uses event delegation to check if the clicked element is a delete button. 
+If it is, the code removes the corresponding list item from the list.
+*/
+
+
+// 5. Implement the "mark as complete" functionality:
+taskList.addEventListener("change", function(event) {
+    if (event.target.tagName === "INPUT" && event.target.type === "checkbox") {
+        let listItem = event.target.parentElement ;
+        listItem.style.textDecoration = event.target.checked ? "line-through" : "none" ;
+    }
+}) ;
+/*
+This code adds a ‘change’ event listener to the “taskList” ul element and uses event delegation to check if the changed element is a checkbox.
+If it is, the code toggles the text decoration of the corresponding list item based on the checkbox’s checked state.
+*/
