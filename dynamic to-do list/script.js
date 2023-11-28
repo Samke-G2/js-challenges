@@ -40,3 +40,13 @@ Finally, it clears the input field.
 // 3. Add an event listener to the “Add Task” button to call the addTask() function when clicked:
 let addButton = document.getElementById("addTask") ;
 addButton.addEventListener("click", addTask) ;
+
+
+// 4. Implement the delete functionality using delegation:
+let taskList = document.getElementById("taskList") ;
+taskList.addEventListener("click", function(event) {
+    if (event.target.tagName === "BUTTON" && event.target.textContet === "Delete") {
+        let listItem = event.target.parentElement;
+        taskList.removeChild(listItem) ;
+    }
+}) ;
