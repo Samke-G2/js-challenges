@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discount eligibility</title>
-    <link rel="stylesheet" href="./istyle.css">
+    <title>Eligibility Form</title>
+    <link rel="stylesheet" href="/istyle.css">
 </head>
 <body>
+    <h1>Discount Eligibility</h1>
+    <br>
     <form id="form">
-        <fieldset>
-            <legend>Discount eligibility</legend>
-
-            <input type="text" id="userName" name="name" placeholder="Name" autocomplete="name">      <br>
-            <br>
-            <input type="number" id="userAge" name="age" placeholder="Age" autocomplete="age">        <br>
-            <br><br>
-            <p>Are you a melsoft member?</p>
-            <input type="checkbox" id="checkBox" name="membership">   Yes
-            <br>
-            <br>
-            <br>
-            <button type="submit" class="btn" id="checkBtn" onclick="eligibilityCheck()">Check</button>
-        </fieldset>
+        <label for="userName">Name:</label>
+        <input id="userName" placeholder="Name">
+        <br>
+        <label for="userAge">Age:</label>
+        <input id="userAge" placeholder="Age" type="number" min="0" max="100">
+        <br>
+        <br>
+        <label for="member">Are you a Melsoft Member?</label>
+        <br>
+        <input id="member" type="checkbox">
+        <br>
+        <br>
+        <button id="check" type="submit" class="btn" onclick="discountCheck()">Check</button>
+        <br>
+        <br>
     </form>
     <br>
-    <p id="result"></p>
-    <script src="./script.js"></script>
+    <h3 id="result"></h3>
+    
+    <script src="./discount.js"></script>
 </body>
 </html>

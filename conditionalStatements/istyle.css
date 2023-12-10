@@ -24,3 +24,6 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
+input {
+    margin: 10px;
+}
